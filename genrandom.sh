@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 
 if [ "$#" -ne 2 ]; then
     echo "Usage: $0 <min> <max>"
@@ -7,6 +8,8 @@ fi
 
 min="$1"
 max="$2"
+
+echo $min $max
 
 random_number=$(shuf -i "$min"-"$max" -n 1)
 
