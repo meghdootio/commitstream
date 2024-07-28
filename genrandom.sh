@@ -9,7 +9,7 @@ fi
 min="$1"
 max="$2"
 
-echo $min $max
+#echo $min $max
 
 random_number=$(shuf -i "$min"-"$max" -n 1)
 
